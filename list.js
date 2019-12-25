@@ -8,21 +8,20 @@ class Novel{
 }
 
 class UI {
+
     addNovelToList(book) {
 
-        const list = document.getElementById('novel-list')
-        const row = document.createElement('tr')
-        row.innerHTML =
+        const list = document.getElementById('book-list');
+        const row = document.getElementById('tr');
+        row.innerHTML = 
 
         <td>${novel.title}</td>
         <td>${novel.author}</td>
         <td>${novel.isbn}</td>
-        <td><a href="" class="delete">X</a></td>
+        <td><a href="" classs="delete">X</a></td>
+             
 
-        
-
-        list.appendChild(row);
-
+list.appendChild(row);
 
 }
 
@@ -112,4 +111,4 @@ document.getElementById('novel-form').addEventListener('submit' ,function(e){
     }
 
     e.preventDefault();
-})
+});
